@@ -7,7 +7,7 @@ on:
       lan_ip:
         description: '设置LAN IP地址'
         required: true
-        default: '192.168.100.1'
+        default: '192.168.10.11'
       os_name:
         description: '设置系统名称'
         required: true
@@ -232,7 +232,7 @@ jobs:
 
         ⏱️ 编译时间: $(date +"%Y年%m月%d日%H时%M分")
 
-        🌐 管理地址: 192.168.100.1
+        🌐 管理地址: 192.168.10.11
 
         👤 用户名: root
 
