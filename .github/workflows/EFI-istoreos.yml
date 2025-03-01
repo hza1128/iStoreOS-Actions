@@ -1,4 +1,4 @@
-name: Build iStore OS
+name: EFI-iStoreos
 
 on:
   repository_dispatch:
@@ -28,7 +28,7 @@ env:
   REPO_URL: https://github.com/istoreos/istoreos
   # REPO_BRANCH: main
   FEEDS_CONF: feeds.conf
-  CONFIG_FILE: .config
+  CONFIG_FILE: efi.config
   DIY_P1_SH: scripts/diy-part1.sh
   DIY_P2_SH: scripts/diy-part2.sh
   WORK_DIR: /mnt/workdir
