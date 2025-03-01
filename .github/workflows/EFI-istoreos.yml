@@ -48,7 +48,7 @@ jobs:
           - istoreos-22.03
           # - istoreos-23.05
         ARCHITECTURE:
-          - rk33xx
+          - armv8-efi
           # - rk35xx
           # - x86
         os:
