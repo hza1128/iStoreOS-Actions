@@ -1,4 +1,4 @@
-name: Build iStore OS
+name: EFI-istoreos.
 
 on:
   repository_dispatch:
