@@ -29,8 +29,8 @@ env:
   REPO_BRANCH: main
   FEEDS_CONF: armv8-efi/feeds.conf
   CONFIG_FILE: armv8-efi/armsr_armv8.config
-  DIY_P1_SH: scripts/diy-part1.sh
-  DIY_P2_SH: scripts/diy-part2.sh
+  DIY_P1_SH: armv8-efi/diy-part1.sh
+  DIY_P2_SH: armv8-efi/diy-part2.sh
   WORK_DIR: /mnt/workdir
   UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: true
