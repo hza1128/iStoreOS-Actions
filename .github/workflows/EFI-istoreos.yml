@@ -1,4 +1,4 @@
-name: EFI-istoreos.
+name: EFI-istoreos
 
 on:
   repository_dispatch:
