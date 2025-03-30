@@ -26,7 +26,7 @@ on:
 
 env:
   REPO_URL: https://github.com/istoreos/istoreos
-  REPO_BRANCH: main
+  REPO_BRANCH: openwrt-24.10
   FEEDS_CONF: armv8-efi/feeds.conf
   CONFIG_FILE: armv8-efi/armsr_armv8.config
   DIY_P1_SH: armv8-efi/diy-part1.sh
