@@ -51,7 +51,7 @@ jobs:
         ARCHITECTURE:
           # - rk33xx
           # - rk35xx
-          # - x86
+          - x86
           - x86-alpha
         os:
           - ubuntu-22.04
