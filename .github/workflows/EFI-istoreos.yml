@@ -1,4 +1,4 @@
-name: EFI-istoreos
+name: istoreos-lean
 
 on:
   repository_dispatch:
@@ -27,10 +27,10 @@ on:
 env:
   REPO_URL: https://github.com/istoreos/istoreos
   REPO_BRANCH: openwrt-24.10
-  FEEDS_CONF: armv8-efi/feeds.conf
-  CONFIG_FILE: armv8-efi/armsr_armv8.config
-  DIY_P1_SH: armv8-efi/diy-part1.sh
-  DIY_P2_SH: armv8-efi/diy-part2.sh
+  FEEDS_CONF: lean/feeds.conf
+  CONFIG_FILE: lean/lean.config
+  DIY_P1_SH: lean/diy-part1.sh
+  DIY_P2_SH: lean/diy-part2.sh
   WORK_DIR: /mnt/workdir
   UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: true
@@ -44,13 +44,13 @@ jobs:
     strategy:
       matrix:
         REPO_BRANCH:
-          # - main
-          - openwrt-24.10
+          - main
+          # - openwrt-24.10
           # - istoreos-23.05
         ARCHITECTURE:
-          - armv8-efi
+          # - armv8-efi
           # - rk35xx
-          # - x86
+          - x86
         os:
           - ubuntu-22.04
 
