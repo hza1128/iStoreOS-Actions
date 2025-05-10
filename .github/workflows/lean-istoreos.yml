@@ -41,6 +41,9 @@ env:
 jobs:
   build:
     runs-on: ubuntu-22.04
+    
+      fail-fast: false
+    
 
     steps:
     - name: 准备完成
