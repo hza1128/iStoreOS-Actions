@@ -1,4 +1,4 @@
-name: istoreos-lean
+name: lean-istoreos
 
 on:
   repository_dispatch:
@@ -25,12 +25,12 @@ on:
    - cron: 0 16 * * *
 
 env:
-  REPO_URL: https://github.com/istoreos/istoreos
-  REPO_BRANCH: openwrt-24.10
-  FEEDS_CONF: lean/feeds.conf
-  CONFIG_FILE: lean/lean.config
-  DIY_P1_SH: lean/diy-part1.sh
-  DIY_P2_SH: lean/diy-part2.sh
+  REPO_URL: https://github.com/coolsnowwolf/lede
+  REPO_BRANCH: master
+  FEEDS_CONF: lean-istoreos/feeds.conf
+  CONFIG_FILE: lean-istoreos/lean.config
+  DIY_P1_SH: lean-istoreos/diy-part1.sh
+  DIY_P2_SH: lean-istoreos/diy-part2.sh
   WORK_DIR: /mnt/workdir
   UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: true
@@ -44,7 +44,7 @@ jobs:
     strategy:
       matrix:
         REPO_BRANCH:
-          - main
+          - master
           # - openwrt-24.10
           # - istoreos-23.05
         ARCHITECTURE:
