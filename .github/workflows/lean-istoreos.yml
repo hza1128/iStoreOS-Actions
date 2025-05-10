@@ -27,7 +27,7 @@ on:
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
-  FEEDS_CONF: lean-istoreos/feeds.conf
+  FEEDS_CONF: lean-istoreos/feeds.conf.default
   CONFIG_FILE: lean-istoreos/lean.config
   DIY_P1_SH: lean-istoreos/diy-part1.sh
   DIY_P2_SH: lean-istoreos/diy-part2.sh
