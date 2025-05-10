@@ -74,11 +74,6 @@ jobs:
         echo "------------------------------- 磁盘详情 -------------------------------\n"
         df -Th
 
-    - name: 安装 Go 1.21.1
-      uses: actions/setup-go@v1
-      with:
-        go-version: 1.21.1
-
     - name: 初始化编译环境
       env:
         DEBIAN_FRONTEND: noninteractive
@@ -103,11 +98,11 @@ jobs:
         sudo chown $USER:$GROUPS /mnt/workdir
 
     - name: 克隆源码
-      working-directory: /mnt/workdir
+      working-directory: /workdir
       run: |
         df -hT $PWD
-        git clone $REPO_URL -b ${{ matrix.REPO_BRANCH }} openwrt
-        ln -sf /mnt/workdir/openwrt $GITHUB_WORKSPACE/openwrt
+        git clone $REPO_URL -b $REPO_BRANCH openwrt
+        ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
 
     - name: 缓存构建动作
       uses: klever1988/cachewrtbuild@main
